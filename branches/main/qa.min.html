@@ -1,0 +1,1130 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 48, errors = 21, warn = 121, info = 37-->
+<head>
+  <title>SMART : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SMART</h1>
+ <p>Generated Tue Aug 22 05:52:29 UTC 2023, FHIR version 4.0.1 for fhir.who.smart-base#0.1.0 (canonical = <a href="http://worldhealthorganization.github.io/smart">http://worldhealthorganization.github.io/smart</a> (<a href="http://worldhealthorganization.github.io/smart/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.28</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.smart-base, Canonical = http://worldhealthorganization.github.io/smart</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://worldhealthorganization.github.io/smart/package-list.json?nocache=1692683549187 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.who.smart-base</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://worldhealthorganization.github.io/smart</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Outdated Release">O</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Latest Release is 5.2.0</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: who.fhir.template#current -&gt; fhir.base.template#0.4.0. Tools: current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://worldhealthorganization.github.io/smart (Problem #1 with package-list.json at http://worldhealthorganization.github.io/smart: Invalid HTTP response 404 from http://worldhealthorganization.github.io/smart/package-list.json?nocache=1692683484956 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 21, warn = 121, info = 37, broken links = 48</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>48</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-fhir.who.smart-base"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-fhir.who.smart-base</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-IMMZ-C-RegisterClient"><b>/github/workspace/fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient</b></a></td><td><b>20</b></td><td><b>113</b></td><td><b>37</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SMARTImplementationGuide"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SMARTImplementationGuide</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SGLogicalModel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SMARTImplementationGuide.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-definitions.html#l263">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-definitions.html#l269">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-definitions.html#l275">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 197, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-definitions.html#l3014">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 676, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-examples.html#l263">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-examples.html#l269">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-examples.html#l275">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 197, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-examples.html#l358">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 291, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-mappings.html#l263">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-mappings.html#l269">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-mappings.html#l275">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 197, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-mappings.html#l405">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 298, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-testing.html#l263">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 183, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-testing.html#l269">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 190, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-testing.html#l275">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 197, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient-testing.html#l356">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 286, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.change.history.html#l333">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 245, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.html#l732">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 265, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.json.html#l2154">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1289, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.profile.history.html#l263">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 184, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.xml.html' for &quot;XML&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.profile.history.html#l269">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 191, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.json.html' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.profile.history.html#l275">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 198, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-IMMZ-C-RegisterClient.profile.ttl.html' for &quot;TTL&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.profile.history.html#l353">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 280, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.ttl.html#l3633">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 876, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IMMZ-C-RegisterClient.xml.html#l3735">output&#8203;/StructureDefinition-IMMZ-C-RegisterClient&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1131, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel-definitions.html#l23862">output&#8203;/StructureDefinition-SGLogicalModel-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 3431, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel-examples.html#l390">output&#8203;/StructureDefinition-SGLogicalModel-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 312, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel-mappings.html#l2287">output&#8203;/StructureDefinition-SGLogicalModel-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 580, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel-testing.html#l374">output&#8203;/StructureDefinition-SGLogicalModel-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 296, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel.html#l29665">output&#8203;/StructureDefinition-SGLogicalModel&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 4003, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel.profile.history.html#l359">output&#8203;/StructureDefinition-SGLogicalModel&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 290, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel.profile.json.html#l20833">output&#8203;/StructureDefinition-SGLogicalModel&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 11128, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel.profile.ttl.html#l39433">output&#8203;/StructureDefinition-SGLogicalModel&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 7717, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SGLogicalModel.profile.xml.html#l39931">output&#8203;/StructureDefinition-SGLogicalModel&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 10345, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide-definitions.html#l8607">output&#8203;/StructureDefinition-SMARTImplementationGuide-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1530, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide-examples.html#l358">output&#8203;/StructureDefinition-SMARTImplementationGuide-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 291, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide-mappings.html#l906">output&#8203;/StructureDefinition-SMARTImplementationGuide-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 373, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide-testing.html#l368">output&#8203;/StructureDefinition-SMARTImplementationGuide-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 286, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide.html#l6997">output&#8203;/StructureDefinition-SMARTImplementationGuide&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1185, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide.profile.history.html#l353">output&#8203;/StructureDefinition-SMARTImplementationGuide&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 280, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide.profile.json.html#l8413">output&#8203;/StructureDefinition-SMARTImplementationGuide&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 4326, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide.profile.ttl.html#l15844">output&#8203;/StructureDefinition-SMARTImplementationGuide&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 3266, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-SMARTImplementationGuide.profile.xml.html#l15628">output&#8203;/StructureDefinition-SMARTImplementationGuide&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 3977, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l413">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 244, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#l320">output&#8203;/changes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 199, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#l317">output&#8203;/downloads&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 197, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l357">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 238, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l367">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 180, column 136</a></b></td><td><b>error</b></td><td><b>The link 'license.html' for &quot;License&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-fhir.who.smart-base"> </a>
+<h2><a href="ImplementationGuide-fhir.who.smart-base.html">fsh-generated/resources/ImplementationGuide-fhir.who.smart-base.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"></div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.meta&#8203;.profile[0] (l1&#8203;/c111)</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE"><b>Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide&#8203;.meta&#8203;.profile[0] (l1&#8203;/c12550)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'SMARTImplementationGuide' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-IMMZ-C-RegisterClient"> </a>
+<h2><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <i>this.</i><a href="StructureDefinition-SGLogicalModel.html">SGLogicalModel</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IMMZ-C-RegisterClient/http://worldhealthorganization.github.io/smart/StructureDefinition/IMMZ_C_RegisterClient</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0] (l1&#8203;/c35228)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c35802)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1]&#8203;.code[0] (l1&#8203;/c35393)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://who.smart.codes/smart' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2] (l1&#8203;/c36111)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2]&#8203;.code[0] (l1&#8203;/c35903)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2]&#8203;.code[1] (l1&#8203;/c35922)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2]&#8203;.code[2] (l1&#8203;/c35943)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3] (l1&#8203;/c36447)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3]&#8203;.code[0] (l1&#8203;/c36222)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3]&#8203;.code[1] (l1&#8203;/c36241)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3]&#8203;.code[2] (l1&#8203;/c36262)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4] (l1&#8203;/c36787)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.code[0] (l1&#8203;/c36560)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.code[1] (l1&#8203;/c36579)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.code[2] (l1&#8203;/c36600)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5] (l1&#8203;/c37135)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5]&#8203;.code[0] (l1&#8203;/c36886)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5]&#8203;.code[1] (l1&#8203;/c36905)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5]&#8203;.code[2] (l1&#8203;/c36926)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6] (l1&#8203;/c37542)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6]&#8203;.code[0] (l1&#8203;/c37251)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6]&#8203;.code[1] (l1&#8203;/c37270)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6]&#8203;.code[2] (l1&#8203;/c37291)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6]&#8203;.short (l1&#8203;/c37317)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Date of birth '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7] (l1&#8203;/c37929)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7]&#8203;.code[0] (l1&#8203;/c37656)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7]&#8203;.code[1] (l1&#8203;/c37675)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8] (l1&#8203;/c38321)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.code[0] (l1&#8203;/c38045)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.code[1] (l1&#8203;/c38064)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9] (l1&#8203;/c38708)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.code[0] (l1&#8203;/c38435)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9]&#8203;.code[1] (l1&#8203;/c38454)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10] (l1&#8203;/c39075)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.code[0] (l1&#8203;/c38828)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10]&#8203;.short (l1&#8203;/c38855)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Multiple birth '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11] (l1&#8203;/c39736)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11]&#8203;.code[0] (l1&#8203;/c39189)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11]&#8203;.code[1] (l1&#8203;/c39210)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12] (l1&#8203;/c40367)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13] (l1&#8203;/c42142)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14] (l1&#8203;/c44834)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15] (l1&#8203;/c45199)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.code[0] (l1&#8203;/c44966)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.code[1] (l1&#8203;/c44987)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16] (l1&#8203;/c45553)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16]&#8203;.code[0] (l1&#8203;/c45333)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17] (l1&#8203;/c45916)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.code[0] (l1&#8203;/c45689)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18] (l1&#8203;/c46334)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.code[0] (l1&#8203;/c46054)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.code[1] (l1&#8203;/c46073)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.code[2] (l1&#8203;/c46094)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19] (l1&#8203;/c46748)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.code[0] (l1&#8203;/c46464)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.code[1] (l1&#8203;/c46483)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.code[2] (l1&#8203;/c46506)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20] (l1&#8203;/c47178)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20]&#8203;.code[0] (l1&#8203;/c46878)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c47333)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c47333)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c47333)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c47333)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.type: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c47832)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.code[0] (l1&#8203;/c47498)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://who.smart.codes/smart' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2] (l1&#8203;/c48078)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[0] (l1&#8203;/c47933)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[1] (l1&#8203;/c47952)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[2] (l1&#8203;/c47973)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[0] (l1&#8203;/c47933)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl126" class="flip" onclick="flip('l126')">Show Reasoning</span><div id="l126" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[2].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[1] (l1&#8203;/c47952)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl127" class="flip" onclick="flip('l127')">Show Reasoning</span><div id="l127" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[2].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.code[2] (l1&#8203;/c47973)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl128" class="flip" onclick="flip('l128')">Show Reasoning</span><div id="l128" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[2].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2] (l1&#8203;/c48078)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3] (l1&#8203;/c48346)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[0] (l1&#8203;/c48189)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[1] (l1&#8203;/c48208)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[2] (l1&#8203;/c48229)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[0] (l1&#8203;/c48189)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl134" class="flip" onclick="flip('l134')">Show Reasoning</span><div id="l134" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[3].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[1] (l1&#8203;/c48208)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl135" class="flip" onclick="flip('l135')">Show Reasoning</span><div id="l135" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[3].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.code[2] (l1&#8203;/c48229)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl136" class="flip" onclick="flip('l136')">Show Reasoning</span><div id="l136" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[3].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3] (l1&#8203;/c48346)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c48617)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[0] (l1&#8203;/c48459)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[1] (l1&#8203;/c48478)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[2] (l1&#8203;/c48499)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[0] (l1&#8203;/c48459)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl142" class="flip" onclick="flip('l142')">Show Reasoning</span><div id="l142" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[4].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[1] (l1&#8203;/c48478)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl143" class="flip" onclick="flip('l143')">Show Reasoning</span><div id="l143" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[4].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.code[2] (l1&#8203;/c48499)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl144" class="flip" onclick="flip('l144')">Show Reasoning</span><div id="l144" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[4].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c48617)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5] (l1&#8203;/c48903)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[0] (l1&#8203;/c48716)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[1] (l1&#8203;/c48735)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[2] (l1&#8203;/c48756)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[0] (l1&#8203;/c48716)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl150" class="flip" onclick="flip('l150')">Show Reasoning</span><div id="l150" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[5].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[1] (l1&#8203;/c48735)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl151" class="flip" onclick="flip('l151')">Show Reasoning</span><div id="l151" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[5].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.code[2] (l1&#8203;/c48756)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl152" class="flip" onclick="flip('l152')">Show Reasoning</span><div id="l152" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[5].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5] (l1&#8203;/c48903)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6] (l1&#8203;/c49240)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[0] (l1&#8203;/c49019)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[1] (l1&#8203;/c49038)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[2] (l1&#8203;/c49059)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.short (l1&#8203;/c49085)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Date of birth '</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[0] (l1&#8203;/c49019)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl159" class="flip" onclick="flip('l159')">Show Reasoning</span><div id="l159" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[6].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[1] (l1&#8203;/c49038)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl160" class="flip" onclick="flip('l160')">Show Reasoning</span><div id="l160" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[6].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[6]&#8203;.code[2] (l1&#8203;/c49059)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl161" class="flip" onclick="flip('l161')">Show Reasoning</span><div id="l161" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[6].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6] (l1&#8203;/c49240)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7] (l1&#8203;/c49558)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.code[0] (l1&#8203;/c49354)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.code[1] (l1&#8203;/c49373)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.code[0] (l1&#8203;/c49354)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl166" class="flip" onclick="flip('l166')">Show Reasoning</span><div id="l166" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[7].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[7]&#8203;.code[1] (l1&#8203;/c49373)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl167" class="flip" onclick="flip('l167')">Show Reasoning</span><div id="l167" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[7].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7] (l1&#8203;/c49558)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8] (l1&#8203;/c49880)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.code[0] (l1&#8203;/c49674)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.code[1] (l1&#8203;/c49693)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.code[0] (l1&#8203;/c49674)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl172" class="flip" onclick="flip('l172')">Show Reasoning</span><div id="l172" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[8].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[8]&#8203;.code[1] (l1&#8203;/c49693)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl173" class="flip" onclick="flip('l173')">Show Reasoning</span><div id="l173" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[8].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8] (l1&#8203;/c49880)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9] (l1&#8203;/c50198)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.code[0] (l1&#8203;/c49994)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.code[1] (l1&#8203;/c50013)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.code[0] (l1&#8203;/c49994)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl178" class="flip" onclick="flip('l178')">Show Reasoning</span><div id="l178" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[9].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[9]&#8203;.code[1] (l1&#8203;/c50013)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl179" class="flip" onclick="flip('l179')">Show Reasoning</span><div id="l179" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[9].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9] (l1&#8203;/c50198)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10] (l1&#8203;/c50493)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.code[0] (l1&#8203;/c50318)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.short (l1&#8203;/c50345)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Multiple birth '</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.code[0] (l1&#8203;/c50318)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl184" class="flip" onclick="flip('l184')">Show Reasoning</span><div id="l184" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[10].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10] (l1&#8203;/c50493)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11] (l1&#8203;/c50827)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.code[0] (l1&#8203;/c50607)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.code[1] (l1&#8203;/c50628)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.code[0] (l1&#8203;/c50607)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl189" class="flip" onclick="flip('l189')">Show Reasoning</span><div id="l189" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[11].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.code[1] (l1&#8203;/c50628)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl190" class="flip" onclick="flip('l190')">Show Reasoning</span><div id="l190" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[11].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11] (l1&#8203;/c50827)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12] (l1&#8203;/c51114)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.code[0] (l1&#8203;/c50959)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.code[1] (l1&#8203;/c50980)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.code[0] (l1&#8203;/c50959)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl195" class="flip" onclick="flip('l195')">Show Reasoning</span><div id="l195" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[12].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.code[1] (l1&#8203;/c50980)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl196" class="flip" onclick="flip('l196')">Show Reasoning</span><div id="l196" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[12].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12] (l1&#8203;/c51114)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13] (l1&#8203;/c51389)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.code[0] (l1&#8203;/c51248)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.code[0] (l1&#8203;/c51248)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl200" class="flip" onclick="flip('l200')">Show Reasoning</span><div id="l200" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[13].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13] (l1&#8203;/c51389)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14] (l1&#8203;/c51672)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.code[0] (l1&#8203;/c51525)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.code[0] (l1&#8203;/c51525)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl204" class="flip" onclick="flip('l204')">Show Reasoning</span><div id="l204" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[14].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14] (l1&#8203;/c51672)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15] (l1&#8203;/c52009)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[0] (l1&#8203;/c51810)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[1] (l1&#8203;/c51829)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[2] (l1&#8203;/c51850)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[0] (l1&#8203;/c51810)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl210" class="flip" onclick="flip('l210')">Show Reasoning</span><div id="l210" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[15].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[1] (l1&#8203;/c51829)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl211" class="flip" onclick="flip('l211')">Show Reasoning</span><div id="l211" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[15].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[15]&#8203;.code[2] (l1&#8203;/c51850)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl212" class="flip" onclick="flip('l212')">Show Reasoning</span><div id="l212" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[15].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15] (l1&#8203;/c52009)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16] (l1&#8203;/c52346)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[0] (l1&#8203;/c52139)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[1] (l1&#8203;/c52158)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[2] (l1&#8203;/c52181)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[0] (l1&#8203;/c52139)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl218" class="flip" onclick="flip('l218')">Show Reasoning</span><div id="l218" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[16].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[1] (l1&#8203;/c52158)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl219" class="flip" onclick="flip('l219')">Show Reasoning</span><div id="l219" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[16].code[1]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[16]&#8203;.code[2] (l1&#8203;/c52181)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl220" class="flip" onclick="flip('l220')">Show Reasoning</span><div id="l220" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[16].code[2]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16] (l1&#8203;/c52346)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17] (l1&#8203;/c52699)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.code[0] (l1&#8203;/c52476)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.code[0] (l1&#8203;/c52476)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0</b> <span id="sl224" class="flip" onclick="flip('l224')">Show Reasoning</span><div id="l224" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0<ul><li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/loinc').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/snomed').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-10').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icd-11').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/icf').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/ichi').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/smart-gps').exists()</li>, <li>StructureDefinition.differential.element[17].code[0]: discriminator = true and system.where(value = 'http://who.smart.codes/atc').exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17] (l1&#8203;/c52699)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-SMARTImplementationGuide"> </a>
+<h2><a href="StructureDefinition-SMARTImplementationGuide.html">fsh-generated/resources/StructureDefinition-SMARTImplementationGuide.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/worldhealthorganization&#8203;.github&#8203;.io&#8203;/smart&#8203;/StructureDefinition&#8203;/SMARTImplementationGuide')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>Resource id/url mismatch: IMMZ-C-RegisterClient/http://worldhealthorganization.github.io/smart/StructureDefinition/IMMZ_C_RegisterClient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-fhir.who.smart-base.html">fsh-generated/resources/ImplementationGuide-fhir.who.smart-base.json</a></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (SMARTImplementationGuide)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>Code System URI 'http://who.smart.codes/smart' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>Code System URI 'http://who.smart.codes/smart' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>value should not start or finish with whitespace 'Date of birth '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>value should not start or finish with whitespace 'Multiple birth '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>value should not start or finish with whitespace 'Date of birth '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>value should not start or finish with whitespace 'Multiple birth '</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-fhir.who.smart-base.html">fsh-generated/resources/ImplementationGuide-fhir.who.smart-base.json</a></td><td><b>Profile reference 'SMARTImplementationGuide' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.type: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IMMZ-C-RegisterClient.html">fsh-generated/resources/StructureDefinition-IMMZ-C-RegisterClient.json</a></td><td><b>StructureDefinition.differential.element.code:smart: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel|0.1.0)</b></td>
+   </tr>
+</table>
+</body>
+</html>

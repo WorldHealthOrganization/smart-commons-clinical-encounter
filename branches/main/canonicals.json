@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "fhir.who.smart-base",
+    "type" : "ImplementationGuide",
+    "url" : "http://worldhealthorganization.github.io/smart/ImplementationGuide/fhir.who.smart-base",
+    "version" : "0.1.0",
+    "name" : "SMART"
+  },
+  {
+    "id" : "IMMZ-C-RegisterClient",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart/StructureDefinition/IMMZ_C_RegisterClient",
+    "version" : "0.1.0",
+    "name" : "IMMZ_C_RegisterClient"
+  },
+  {
+    "id" : "SGLogicalModel",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart/StructureDefinition/SGLogicalModel",
+    "version" : "0.1.0",
+    "name" : "SGLogicalModel"
+  },
+  {
+    "id" : "SMARTImplementationGuide",
+    "type" : "StructureDefinition",
+    "url" : "http://worldhealthorganization.github.io/smart/StructureDefinition/SMARTImplementationGuide",
+    "version" : "0.1.0",
+    "name" : "SMARTImplementationGuide"
+  }
+]
